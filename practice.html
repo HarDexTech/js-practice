@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body></body>
+  <script>
+    //fuction
+    function user(name, Day = "Day") {
+      console.log(`Good ${Day}, ${name}`);
+    }
+    user("Ayo", "morning");
 
-</body>
-<script src="script.js"></script>
+    function greet(name = "stranger") {
+      console.log("Hello " + name);
+    }
+    greet();
+    function makeDrink(drinkName, size = "medium") {
+      console.log(`Your ${size} ${drinkName} is ready!`);
+    }
+    makeDrink("Coffee", "large");
+    function orderMeal(food, drink = "water") {
+      console.log(
+        `You ordered: ${food.toUpperCase()} with ${drink.toUpperCase()}`
+      );
+    }
+    orderMeal("Rice and Stew", "Red Bull");
+
+    function makeCoffee(type) {
+      console.log(`Making a ${type} coffee`);
+    }
+    makeCoffee("latte");
+  </script>
 </html>
