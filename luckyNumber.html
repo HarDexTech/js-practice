@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Number Game</title>
+</head>
+<body>
+    <script>
+        const luckyNumbers = [5, 7];
+        let play = confirm("Do you want to play? OK for Yes, Cancel for No");
+        
+        while (play) {
+            let guessNumber = Math.floor(Math.random() * 10);
+            
+            while (!luckyNumbers.includes(guessNumber)) {
+                console.log(`Nope, it isn't ${guessNumber}`);
+                guessNumber = Math.floor(Math.random() * 10);
+            }
+            
+            console.log(`My lucky number is ${guessNumber}`);
+            play = confirm("Play again? OK for Yes, Cancel for No");
+        }
+        
+        console.log("Goodbye");
+    </script>
+</body>
+</html>
