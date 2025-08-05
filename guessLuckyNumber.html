@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var name = prompt("Do you want to play(Y for yes, N for no)");
+
+      while (name === "Y") {
+        const luckyNumber = [5, 7];
+        var guessNumber = Math.floor(Math.random() * 10);
+
+        while (!luckyNumber.includes(guessNumber)) {
+          console.log(`${guessNumber} is not it`);
+          var guessNumber = Math.floor(Math.random() * 11);
+        }
+        console.log(`${guessNumber} is my lucky Number`);
+        var name = prompt("Do you want to play again(Y for yes, N for no)");
+      }
+      console.log("Goodbye");
+    </script>
+  </body>
+</html>
