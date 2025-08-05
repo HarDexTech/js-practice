@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Number Game</title>
+</head>
+<body>
+    <script>
+        // Your exact code starts
+        let play = prompt('Do you want to play? Yes or No:');
+        play = play.toLowerCase();
+
+        while (play === "yes") {
+            const luckyNumbers = [5, 7];
+            let guessNumber = Math.floor(Math.random() * 10);
+
+            while (!luckyNumbers.includes(guessNumber)) {
+                console.log(`Nope, it isn't ${guessNumber}`);
+                guessNumber = Math.floor(Math.random() * 10);
+            }
+
+            console.log(`My lucky number is ${guessNumber}`);
+            play = prompt('Would you like to play again? Yes or No:').toLowerCase();
+        }
+
+        console.log("Good Bye");
+        // Your exact code ends
+    </script>
+</body>
+</html>
