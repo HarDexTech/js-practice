@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
+
       const firstUser = parseInt(prompt("Player one number:"));
       const secondUser = parseInt(prompt("Player two number:"));
       const computer = Math.floor(Math.random() * 2);
@@ -31,6 +23,3 @@
           console.log("Try Again");
         }
       }
-    </script>
-  </body>
-</html>
