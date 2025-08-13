@@ -4,5 +4,5 @@ function calcBMI(weight, height) {
   return weight / x ** 2;
 }
 //Weight in kg, Height in m
-var calculateBMI = calcBMI(65, 1.8).toFixed(1); //toFixed(1) rounds the result to 1 decimal places
+var calculateBMI = calcBMI(65, 100).toFixed(1); //toFixed(1) rounds the result to 1 decimal places
 console.log(`Your BMI is ${calculateBMI}`);

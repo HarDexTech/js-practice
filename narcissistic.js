@@ -9,4 +9,4 @@ function narcissistic(value){
     }
     return sum === value
 }
-console.log(narcissistic());
+console.log(narcissistic(153));
