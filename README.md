@@ -10,11 +10,10 @@ This repository contains a growing collection of HTML files with embedded JavaSc
 - **Calculators & Utilities** - BMI calculator, simple arithmetic calculator, leap year checker
 - **Games** - Rock Paper Scissors, guessing games, number games
 - **String Manipulation** - Text processing and formatting exercises
-- **Programming Challenges** - Classic problems like FizzBuzz and algorithmic thinking
+- **Programming Challenges** - Classic problems and algorithmic thinking
 - **Random Selection & Logic** - Decision makers and randomization projects
 
-*Browse the repository files to see all current projects. Each HTML file is self-contained and can be run independently in any modern web browser.*
-
+*Browse the repository files to see all current projects.*
 ## 🚀 How to Run
 
 1. Clone this repository to your local machine

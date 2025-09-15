@@ -3,11 +3,11 @@ function palindrome() {
   valued = value.toLowerCase();
   reversed = valued.split("").reverse().join("");
   if (!value) {
-    alert(`No value found`);
+    console.log(`No value found`);
   } else if (valued === reversed) {
-    alert(`${value} is a palindrome`);
+    console.log(`${value} is a palindrome`);
   } else {
-    alert(`${value} is not a palindrome`);
+    console.log(`${value} is not a palindrome`);
   }
 }
 palindrome();

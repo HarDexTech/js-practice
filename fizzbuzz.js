@@ -18,23 +18,23 @@ function fizzBuzz() {
 }
 fizzBuzz();
 
-function fizz(){
-const numBer = parseInt(prompt("Enter the amount of Fizz Buzz you want to write"));
-count = [];
+function fizz() {
+  const numBer = parseInt(prompt("Enter the amount of Fizz Buzz you want to write"));
+  count = [];
 
-for (let i = 1; i < numBer+1; i++){
-    if (i%3 === 0){
-        count.push("Fizz")
+  for (let i = 1; i < numBer + 1; i++) {
+    if (i % 3 === 0) {
+      count.push("Fizz")
     }
-    else if (i%5 === 0){
-        count.push("Buzz")
+    else if (i % 5 === 0) {
+      count.push("Buzz")
     }
-    else if (i%3 === 0 && i%5===0){
-        count.push("Fizz Buzz")
+    else if (i % 3 === 0 && i % 5 === 0) {
+      count.push("Fizz Buzz")
     }
-    else{
-        count.push(i)
+    else {
+      count.push(i)
     }
-}
-console.log(count)
+  }
+  console.log(count)
 }

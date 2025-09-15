@@ -2,9 +2,9 @@ const firstUser = parseInt(prompt("Player one number(Enter only 1 or 0):"));
 const secondUser = parseInt(prompt("Player two number(Enter only 1 or 0):"));
 const computer = Math.floor(Math.random() * 2);
 
-document.write(`Player one number is ${firstUser} <br>`);
-document.write(`Player two number is ${secondUser} <br>`);
-document.write(`Computer number is ${computer}`);
+console.log(`Player one number is ${firstUser} <br>`);
+console.log(`Player two number is ${secondUser} <br>`);
+console.log(`Computer number is ${computer}`);
 
 if (
   (firstUser !== 0 && firstUser !== 1) ||
