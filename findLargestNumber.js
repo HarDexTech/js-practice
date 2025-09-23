@@ -7,3 +7,6 @@ for (let index = 1; index < arr.length; index++) {
         console.log(`${firstLargest} is the largest`)
     }
 }
+// or by using math.max
+let largest = Math.max(...arr);
+console.log(`Largest number is ${largest}`)

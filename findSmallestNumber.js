@@ -7,4 +7,7 @@ for (let i = 1; i < numbers.length;i++){
         console.log(`Smallest number is ${small}`)
     }
 }
-console.log(small)
+
+// or by using math.min
+let smallest = Math.min(...numbers);
+console.log(`Smallest number is ${smallest}`)
