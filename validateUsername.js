@@ -1,5 +1,6 @@
+'use strict'
 function validateUsername(str) {
-    let isBool = true;
+    let isBool;
     const symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '.', ',', '`', '~', '/', '|', '[', ']', '{', '}', '?', '<', '>', ':', ';'];
     let result = '';
     str = str.toLowerCase().trim().replace(/ +/g, "-").replace(/-+/g, "-");
@@ -8,11 +9,11 @@ function validateUsername(str) {
             continue
         }
         else{
-            result += str[i];
-            
+            result += str[i]; 
         }
     }
     (result.length > 16 || result.length < 3) ? isBool = false : isBool = true;
     console.log({"valid": isBool,"cleaned": result, "length": result.length});
 }
-validateUsername("  John123!@#Dhdh93k9{[fhq-01l4=2k2oe  ");
+validateUsername("  John1ayomide  ");
+validateUsername("  John1ayomideijfidiidimf04m0kjms  ");

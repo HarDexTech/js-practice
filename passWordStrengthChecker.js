@@ -1,4 +1,5 @@
-const passWord = prompt("Enter password to check:");
+// const passWord = prompt("Enter password to check:");
+const passWord = 'Adesina';
 const splitPassword = passWord.split('');
 const numeric = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const upperAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -34,3 +35,39 @@ if (length === true && hasLower === true && hasNumber === true && hasUpper === t
 else {
     console.log(`This password ain't strong, think of something better`);
 }
+
+// const password = prompt('Enter password to check:');
+const password = 'ayomide';
+let len = false;
+let isUpper = false;
+let isLower = false;
+let hasSymbols = false;
+let hasNum = false;
+if (password.match(/[0-9]/)) {
+    hasNum = true;
+}
+if (password.match(/[A-Z]/)) {
+    isUpper = true;
+}
+if (password.match(/[a-z]/)) {
+    isLower = true;
+}
+if (password.match(/[^a-zA-Z0-9]/g)) {
+    hasSymbols = true;
+}
+if (password.length >= 8) {
+    len = true;
+}
+
+if (isLower && hasNum && isUpper && hasSymbols && len)
+    console.log('password is strong')
+if (len === false)
+    console.log('character is less than 8')
+if (hasSymbols === false)
+    console.log('include symbols')
+if (isUpper === false)
+    console.log('include uppercase characters')
+if (hasNum === false)
+    console.log('include numbers')
+if (isLower === false)
+    console.log('include lower-case characters')

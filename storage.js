@@ -15,18 +15,30 @@ function storageSense(value, space) {
         }
     }
 
-    if (value.slice(-2) === `kb`) {
-        valueB = Number(firstValue) * 10 ** 3;
+    if (value.endsWith(`kb`)) {
+        valueB = Number(firstValue) * 1024;
     }
-    else if (value.slice(-2) === `mb`) {
-        valueB = Number(firstValue) * 10 ** 6;
+    else if (value.endsWith(`mb`)) {
+        valueB = Number(firstValue) * (1024**2)
     }
-    else if (value.slice(-2) === `gb`) {
-        valueB = Number(firstValue) * 10 ** 9;
+    else if (value.endsWith(`gb`)) {
+        valueB = Number(firstValue) * console.log(1024**3);
     }
     else if (value.slice(-1) === `b`) {
         valueB = Number(firstValue);
     }
+    // if (value.slice(-2) === `kb`) {
+    //     valueB = Number(firstValue) * 10 ** 3;
+    // }
+    // else if (value.slice(-2) === `mb`) {
+    //     valueB = Number(firstValue) * 10 ** 6;
+    // }
+    // else if (value.slice(-2) === `gb`) {
+    //     valueB = Number(firstValue) * 10 ** 9;
+    // }
+    // else if (value.slice(-1) === `b`) {
+    //     valueB = Number(firstValue);
+    // }
     else {
         valueB = `Invalid`
     }
@@ -49,10 +61,10 @@ function storageSense(value, space) {
     if (valueB <= spaceB && typeof spaceB === "number" && typeof valueB === "number") {
         amount = spaceB / valueB;
         (amount > 1) ? no = `Files` : no = `File`
-        console.log(`Your system will take ${amount} ${no}`)
+        console.log(`Your system will take ${Math.floor(amount)} ${no}`)
     }
     else {
         console.log(`Invalid input`)
     }
 }
-storageSense(`1.99gb`, `296gb`);
+storageSense(`500mb`, `256Gb`);
