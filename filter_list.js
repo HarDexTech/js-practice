@@ -21,10 +21,12 @@ const filter = (arr, value) => {
         result.push(arr[i]);
       }
     }
-    return result;
+    console.log(`Here's the filtered array`)
+    console.log(result);
   }
   else{
-    return arr;
+    console.log(`No match found to filter`)
+    console.log(arr);
   }
 }
 console.log(filter([1, 2, "a", "b", 3, "5", 7, 9, "3", 4], 9));
