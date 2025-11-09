@@ -11,3 +11,12 @@ function palindrome() {
   }
 }
 palindrome();
+
+var isPalindrome = function(x) {
+    if(x < 0)
+        return false;
+    else{
+        let y = String(x).split('').reverse().join('');
+        return x==y
+    }
+}
