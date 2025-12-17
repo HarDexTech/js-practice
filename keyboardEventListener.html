@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    [d] {
+      display: flex;
+      gap: 20px;
+    }
+    [e] {
+      width: auto;
+      height: auto;
+      background: black;
+      color: white;
+    }
+  </style>
+  <body>
+    <!--Your HTML code goes here-->
+    <div d>
+      <div e id="a">Keyup</div>
+      <div e id="b">Keydown</div>
+      <div e id="c">Keypress</div>
+    </div>
+  </body>
+  <script>
+    const a = document.getElementById('a');
+    const b = document.getElementById('b');
+    const c = document.getElementById('c');
+    const body = document.querySelector('body');
+
+    body.addEventListener('keyup', function (event) {
+      a.innerHTML += `<div>${event.code}</div>`;
+    });
+
+    body.addEventListener('keydown', function (event) {
+      b.innerHTML += `<div>${event.code}</div>`;
+    });
+
+    body.addEventListener('keypress', function (event) {
+      c.innerHTML += `<div>${event.code}</div>`;
+    });
+  </script>
+</html>

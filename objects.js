@@ -1,25 +1,25 @@
 let anotherObject = {};
 anotherObject.age = 30;
-anotherObject.city = "New York";
+anotherObject.city = 'New York';
 
 let myObject = {
-    name: "John",
-    year: 2007,
-    city: "Lagos",
-    job: "teacher",
-    friends: ["ayo", "ade"],
-    hasDriversLicense: true,
-    object2: anotherObject,
-    welcome: () => {
-        console.log("Welcome to the community!");
-    },
-    greet: function(str='ay'){
-        console.log(`hi ${str}`)
-    },
-    getAge: function () {
-        this.age = 2025 - this.year;
-        return this.age;
-    }
+  name: 'John',
+  year: 2007,
+  city: 'Lagos',
+  job: 'teacher',
+  friends: ['ayo', 'ade'],
+  hasDriversLicense: true,
+  object2: anotherObject,
+  welcome: () => {
+    console.log('Welcome to the community!');
+  },
+  greet: function (str = 'ay') {
+    console.log(`hi ${str}`);
+  },
+  getAge: function () {
+    this.age = 2025 - this.year;
+    return this.age;
+  },
 };
 
 // const char = prompt('Enter:');
@@ -31,30 +31,35 @@ let myObject = {
 // console.log(myObject);
 // console.log(myObject.getAge());
 
-console.log(`${myObject.name} is a ${myObject.getAge()}-year old ${myObject.job}, and he has a `);
+console.log(
+  `${myObject.name} is a ${myObject.getAge()}-year old ${
+    myObject.job
+  }, and he has a `
+);
 
 //BMI Challenge
 const mark = {
-    fullName: "Mark Miller",
-    mass: 78,
-    height: 1.69,
-    calcBMI: function(){
-        this.bmi = (this.mass/(this.height*this.height)).toFixed(1);
-        return this.bmi
-    }
-}
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = (this.mass / (this.height * this.height)).toFixed(1);
+    return this.bmi;
+  },
+};
 
 const john = {
-    fullName: "John Smith",
-    mass: 78,
-    height: 1.69,
-    calcBMI: function(){
-        this.bmi = (this.mass/(this.height*this.height)).toFixed(1);
-        return this.bmi
-    }
-}
+  fullName: 'John Smith',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = (this.mass / (this.height * this.height)).toFixed(1);
+    return this.bmi;
+  },
+};
 
-let str = (mark.calcBMI() > john.calcBMI()) ? 
-    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})` : 
-    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`;
-console.log(str)
+let str =
+  mark.calcBMI() > john.calcBMI()
+    ? `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`
+    : `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`;
+console.log(str);
